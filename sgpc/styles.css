@@ -32,7 +32,6 @@ body {
     display: grid;
     grid-template-columns: 95%;
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     font-family: 'Karla';
     font-size: 16px;
@@ -44,6 +43,7 @@ body {
 
 .container {
     margin-top: 60px;
+    
 }
 
 div {
@@ -150,13 +150,18 @@ div {
 }
 
 @media (min-width:768px) {
-    
+
+    body {
+        display: flex;
+        justify-items: center;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         max-width: 680px;
-        margin-top: 120px;
+        margin-top: 80px;
     }
 
     .community {
